@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back55"
+    android:id="@+id/main"
+    tools:context="com.shahruie.www.Knowledge_Train.MainActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/ll_main"
+    android:layout_marginBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ghatar_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ghatar3"/>
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="300dp"
+                   android:id="@+id/main_ostanha"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/keshvar3"/>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:id="@+id/main_keshvarha"
+        android:layout_weight="1"
+        android:layout_height="300dp"
+        android:src="@drawable/map3"/>
+               <ImageView
+                   android:id="@+id/main_emam"
+                   android:layout_width="wrap_content"
+                   android:scaleType="fitXY"
+                   android:layout_height="300dp"
+                   android:src="@drawable/dini_icon"/>
+                 <ImageView
+                     android:scaleType="fitXY"
+                     android:layout_weight="1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="300dp"
+                     android:id="@+id/main_alefba"
+                     android:src="@drawable/alefba_icon"/>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:id="@+id/main_english"
+        android:layout_weight="1"
+        android:layout_height="300dp"
+        android:src="@drawable/zaban_icon"/>
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/main_music"
+                    android:layout_weight="1"
+                    android:layout_height="300dp"
+                    android:src="@drawable/sayer_icon"/>
+</LinearLayout>
+    </HorizontalScrollView>
+   <!-- <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/main_mut"
+        android:src="@drawable/if_unmute"
+        android:layout_toRightOf="@+id/main_comment"
+        android:layout_alignParentBottom="true"
+        />-->
+   <ImageView
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:src="@drawable/if_comment"
+       android:id="@+id/main_comment"
+       android:layout_toRightOf="@+id/main_info"
+       android:layout_alignParentBottom="true"
+       />
+   <ImageView
+       android:layout_toRightOf="@+id/main_exit"
+       android:layout_alignParentBottom="true"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:src="@drawable/if_info"
+       android:id="@+id/main_info"
+       android:layout_above="@+id/main_exit"
+       />
+   <ImageView
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+       android:src="@drawable/if_close"
+       android:id="@+id/main_exit"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentBottom="true"
+       />
+
+</RelativeLayout>
